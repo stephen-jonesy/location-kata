@@ -38,11 +38,11 @@ describe('location', () => {
         ];
         const result = [
             { name: 'Hypatia', age: 31, location: 'leeds' },
-            { name: 'Ramanujan', age: 22, location: 'remote' },
+            { name: 'Ramanujan', age: 22 },
             { name: 'Tao', age: 47, location: 'manchester' }
         ];
         location(input);  
-        expect(input).not.toEqual(result);
+        expect(input).toEqual(result);
 
     });
 });
